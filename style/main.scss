@@ -1,0 +1,119 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+}
+@font-face {
+	font-family: "ProductSans";
+	src: url("fonts/ProductSans-Bold.woff") format("woff");
+}
+@mixin forcontentstyle{
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-height: 100px;
+	align-items: center;
+	justify-content: space-around;
+}
+/*************************************/
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-content: center;
+	align-items: center;
+}
+.maincontent{
+	margin-top: 50px;
+	width: 90%;
+}
+.content {
+	@include forcontentstyle();
+	border: 1px solid #cecece;
+	font-family: 'ProductSans', Bold;
+	font-weight: 700;
+}
+.one{
+	margin-top: 50px;
+}
+.two, .three {
+	@include forcontentstyle();
+	border: 1px solid #669900;
+	font-family: 'ProductSans', Bold;
+	font-weight: 100;
+	margin-top: 50px;
+}
+.two .resultLog {
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #669900;
+	display: grid;
+	padding: 5px;
+	grid-gap: 5px;
+  }
+.resultLog div{
+	border: 1px solid #ffffff;
+}
+.color{
+	background-color: #669900;
+}
+
+/*TANK - 1*/
+.sp{
+	width:100px;
+	height: 100px;
+	background-image: url(/img/great-war-tank.svg);
+	position: relative;
+	margin-left: 0%;
+	
+}
+.r {
+	margin-left: 60% !important;
+	transition: 13s;
+	animation-fill-mode: forwards;
+}
+.l {
+	margin-left: 0% !important;
+	transition: 13s;
+	animation-fill-mode: forwards;
+}
+.pausedTranslate {
+	transform: translate(0%);
+}
+/*TANK - 2*/
+.lamp {
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	background-image: url(/img/led.svg);
+	left: 15px;
+	position: relative;
+}
+.lampOn {
+	background-image: url(/img/ledOn.svg);
+}
+/*TANK - 3*/
+.fire {
+	width: 10px;
+	height: 3px;
+	display: inline-block;
+	background-color:red;
+	position: relative;
+	z-index: -1;
+	top: 11px;
+	left: 16px;
+}
+.openFire {
+	animation: fire 500ms infinite;
+	animation-fill-mode: forwards;
+	overflow: hidden;
+}
+@keyframes fire {
+	from {transform: translate(0)};
+	to {transform: translate(90px); opacity: 0;};
+}
