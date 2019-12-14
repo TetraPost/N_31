@@ -67,7 +67,7 @@ body {
 .sp{
 	width:100px;
 	height: 100px;
-	background-image: url(/img/great-war-tank.svg);
+	background-image: url(./img/great-war-tank.svg);
 	position: relative;
 	margin-left: 0%;
 	
@@ -90,12 +90,12 @@ body {
 	width: 10px;
 	height: 10px;
 	display: inline-block;
-	background-image: url(/img/led.svg);
+	background-image: url(./img/led.svg);
 	left: 15px;
 	position: relative;
 }
 .lampOn {
-	background-image: url(/img/ledOn.svg);
+	background-image: url(./img/ledOn.svg);
 }
 /*TANK - 3*/
 .fire {
