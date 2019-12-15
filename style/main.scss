@@ -73,19 +73,29 @@ body {
 	
 }
 .r {
-	margin-left: 60% !important;
-	transition: 13s;
+	margin-left: 85% !important;
+	transition: 10s;
 	animation-fill-mode: forwards;
 }
 .l {
 	margin-left: 0% !important;
-	transition: 13s;
+	transition: 10s;
 	animation-fill-mode: forwards;
 }
 .pausedTranslate {
 	transform: translate(0%);
 }
 /*TANK - 2*/
+.rotateL {
+	transition: 300;
+	transform: scale(-1, 1); 
+	filter: FlipH;
+}
+.rotateR {
+	transition: 500;
+	transform: scale(1, 1);
+	filter: FlipH;
+}
 .lamp {
 	width: 10px;
 	height: 10px;
@@ -111,7 +121,7 @@ body {
 .openFire {
 	animation: fire 500ms infinite;
 	animation-fill-mode: forwards;
-	overflow: hidden;
+	overflow: hidden;    
 }
 @keyframes fire {
 	from {transform: translate(0)};

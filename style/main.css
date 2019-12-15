@@ -114,17 +114,17 @@ body {
 }
 
 .r {
-  margin-left: 60% !important;
-  -webkit-transition: 13s;
-  transition: 13s;
+  margin-left: 85% !important;
+  -webkit-transition: 10s;
+  transition: 10s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .l {
   margin-left: 0% !important;
-  -webkit-transition: 13s;
-  transition: 13s;
+  -webkit-transition: 10s;
+  transition: 10s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -135,6 +135,24 @@ body {
 }
 
 /*TANK - 2*/
+.rotateL {
+  -webkit-transition: 300;
+  transition: 300;
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}
+
+.rotateR {
+  -webkit-transition: 500;
+  transition: 500;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}
+
 .lamp {
   width: 10px;
   height: 10px;
